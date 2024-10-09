@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<style>
+  .hijo1 {
+    color: crimson; /* Color para hijo 1 */
+  }
+  .hijo1 ~ div {
+    color: blue; /* Color para otros hijos */
+  }
+  .foo {
+    color: lawngreen; /* Color para .foo */
+  }
+  #bar {
+    color: darkorange; /* Color para #bar */
+  }
+</style>
+<style>
+  #outer a {
+    background-color: orangered; /* Color de fondo para enlaces */
+  }
+  #outer #inner a {
+    background-color: red; /* Color de fondo para enlaces dentro de inner */
+  }
+</style>
+<body>
+<div class="caja1">BIENVENIDO</div>
+<div class="caja2">BIENVENIDO</div>
+<div class="caja3" id="foo">BIENVENIDO</div>
+<a href="#" title="mi titulo">Enlace roto</a>
+<button>MI BOTON</button>
+<form>
+  <label for="fecha">Fecha</label>
+  <input name="fecha" type="date" disabled>
+  <div></div>
+  <input type="password" id="password"> <!-- Cambiado a password -->
+</form>
+<p class="foo">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus libero inventore, obcaecati mollitia aliquam cumque, a doloremque sunt sequi odio!
+</p>
+<div class="bar">
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, aliquam?
+</div>
+<div class="baz">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, rem.
+</div>
+<div class="abuelo">
+  <div class="hijo1">Soy el hijo 1: Este es un nuevo texto.</div>
+  <div class="hijo2">Soy el hijo 2: Aquí va otra descripción.</div>
+  <p>Soy el hijo 3: Texto diferente para este hijo.</p>
+  <div class="hijo3">Soy el hijo 4: Otro mensaje interesante.</div>
+  <div class="hijo4">Soy el hijo 5: Este es un texto adicional.</div>
+  <div class="hijo5">Soy el hijo 6: Mensaje extra para completar.</div>
+</div>
+<p class="foo" id="bar">BIENVENIDO</p>
+<div id="outer">
+  <div id="inner">
+    <a href="">HOLA MUNDO</a>
+  </div>
+</div>
+</body>
+</html>
